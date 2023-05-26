@@ -117,13 +117,9 @@ export default defineComponent({
   },
   computed: {
     getPath() {
-      console.log("check this.$route.pat", this.$route.path);
       return this.$route.path;
     },
   },
-  async mounted() {
-    const res = await fetch("https://jsonplaceholder.typicode.com/users");
-    console.log(res.json());
-  },
+  async mounted() {},
 });
 </script>
