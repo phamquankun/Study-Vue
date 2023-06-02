@@ -9,5 +9,8 @@ export const useAuthApi = () => {
     const url = "/users";
     return handleRequest(axios.get(url));
   };
-  return { getUsers };
+  const getA = () => {
+    return "ABCED";
+  };
+  return { getUsers, getA };
 };
